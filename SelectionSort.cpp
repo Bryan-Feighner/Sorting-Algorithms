@@ -14,9 +14,11 @@ void selectionSort(int array[], int n) {
 }
 void printResult(int array[], int n) {
   int i;
+  cout << "[";
   for (i = 0; i < n; i++) {
-    cout << array[i] << " \n";
+    cout << array[i] << " ";
   }
+  cout << "]\n";
 }
 int main() {
   int size = 0, data;
@@ -24,7 +26,7 @@ int main() {
   cin >> size;
   int array[size];
   for (int i = 0; i < size; i++) {
-    5 cout << "Please enter your data point: ";
+    cout << "Please enter your data point: ";
     cin >> data;
     array[i] = data;
   }
